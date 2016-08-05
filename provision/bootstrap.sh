@@ -111,15 +111,6 @@ Categories=Development;IDE
 Name[en]=Eclipse 4.4
 EOL
 
-# Installing ACK
-echo -e "\n**** Installing Ack for use in Vim if needed ****\n"
-apt-get -qq -y install ack-grep > /dev/null
-dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
-
-# Installing The Silver Searcher
-echo -e "\n**** Installing The Silver Searcher for use in Vim if needed ****\n"
-apt-get -qq -y install silversearcher-ag > /dev/null
-
 # Installing CTags support
 echo -e "\n**** Installing CTags support ****\n"
 apt-get -qq -y install exuberant-ctags > /dev/null

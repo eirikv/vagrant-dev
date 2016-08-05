@@ -54,16 +54,6 @@ rm ~/gcc-arm-none-eabi-4_9-2015q2-20150609-linux.tar.bz2
 
 echo -e "\n**** Done downlading GCC ARM Embedded Toolkit ****\n"
 
-echo -e "\n**** Grabbing Eclipse 4.4 Luna with CDT built in ****\n"
-curl -sLo ~/eclipse-cpp-luna-linux-gtk-x86_64.tar.gz http://ftp.osuosl.org/pub/eclipse/technology/epp/downloads/release/luna/SR2/eclipse-cpp-luna-SR2-linux-gtk-x86_64.tar.gz >/dev/null
-
-if [[ -f ~/eclipse-cpp-luna-linux-gtk-x86_64.tar.gz ]]; then
-    echo -e "\n******  eclipse-cpp-luna-SR2-linux-gtk-x86_64.tar.gz has been downloaded  ******\n"
-fi
-
-tar xzf ~/eclipse-cpp-luna-linux-gtk-x86_64.tar.gz -C ~/
-rm ~/eclipse-cpp-luna-linux-gtk-x86_64.tar.gz
-
 # Install OpenOCD from GNU ARM Eclipse project
 echo -e "\n**** Installing OpenOCD 0.9.0 from built tar ****\n"
 curl -sLo openocd-0.9.0.tar.gz 'http://downloads.sourceforge.net/project/gnuarmeclipse/OpenOCD/GNU%20Linux/gnuarmeclipse-openocd-debian64-0.9.0-201505190955.tgz' > /dev/null
