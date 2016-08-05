@@ -16,3 +16,6 @@ echo -e "\n**** Installing node"
 sudo apt-get install -y npm
 sudo npm install -g n
 sudo n latest
+
+echo -e "\n**** Set norwegian locale for keyboard"
+setxkbmap no
