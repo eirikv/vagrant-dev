@@ -64,7 +64,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 
   config.vm.box = "ubuntu/trusty64"
-  config.vm.hostname = "stm32-eclipse"
+  config.vm.hostname = "development"
 
   config.ssh.forward_agent = true
   config.ssh.forward_x11 = true
