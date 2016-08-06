@@ -116,5 +116,14 @@ make
 sudo make install
 rm -rf ~/stlink
 
-echo -e "\n**** \n**** Installation is done!!\n**** \n"
+echo -e "\n**** Set norwegian locale for keyboard"
+# For some reason this doesn't seem to work from the provision file, so just run it on login...
+echo "setxkbmap no" >>  ~/.bashrc
 
+echo -e "\n**** Sublime Text config"
+cd /tmp
+git clone https://github.com/ivarni/Preferences.sublime-settings.git
+mkdir -p /home/vagrant/.config/sublime-text-3/Packages/User/
+cp Preferences.sublime-settings/Preferences.sublime-settings /home/vagrant/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+
+echo -e "\n**** \n**** Installation is done!!\n**** \n"
