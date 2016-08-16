@@ -118,7 +118,7 @@ rm -rf ~/stlink
 
 echo -e "\n**** Set norwegian locale for keyboard"
 # For some reason this doesn't seem to work from the provision file, so just run it on login...
-echo "setxkbmap no" >>  ~/.bashrc
+echo "setxkbmap no" >>  /home/vagrant/.bashrc
 
 echo -e "\n**** Sublime Text config"
 cd /tmp
