@@ -130,7 +130,6 @@ echo -e "\n**** Android Studio"
 cd /tmp
 wget https://dl.google.com/dl/android/studio/ide-zips/2.1.2.0/android-studio-ide-143.2915827-linux.zip
 mkdir -p ~/opt
-unzip android-studio-ide-143.2915827-linux.zip -d /opt/android-studio
-#TODO test when having proper connection again
+unzip android-studio-ide-143.2915827-linux.zip -d ~/opt
 
 echo -e "\n**** \n**** Installation is done!!\n**** \n"
